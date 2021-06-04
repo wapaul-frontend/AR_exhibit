@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       
+</head>
+
+<body>
+  
+</body>
+ 
+</html>
+
+<script>
+   (function() { 
+      function isMobile() {
+         return (
+            (navigator.userAgent.match(/Android/i)) ||
+            (navigator.userAgent.match(/webOS/i)) ||
+            (navigator.userAgent.match(/iPhone/i)) ||
+            (navigator.userAgent.match(/iPod/i)) ||
+            (navigator.userAgent.match(/iPad/i)) ||
+            (navigator.userAgent.match(/BlackBerry/))
+         );
+      }
+
+        if(isMobile()) {
+            window.location = 'animateXR.html';
+        }else{
+            window.location = '404.html';
+      }
+    })();
+</script>
